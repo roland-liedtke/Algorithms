@@ -1,16 +1,16 @@
-var doSearch = function(array, targetValue) {
+var doSearch = function(arr, targetValue) {
     var min = 0;
-    var max = array.length - 1;
+    var max = arr.length - 1;
     var guess;
     var shoot = 1;
     while(max >= min){
         guess = Math.floor((max + min) / 2);
         println(guess);
-        if(array[guess] === targetValue){
+        if(arr[guess] === targetValue){
             println(shoot);
             return guess;
         }
-        else if(array[guess] < targetValue){
+        else if(arr[guess] < targetValue){
             min = guess + 1;
             shoot++;
         }
