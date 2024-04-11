@@ -1,4 +1,4 @@
-var doSearch = function(arr, targetValue) {
+function doSearch(arr, targetValue) {
     var min = 0;
     var max = arr.length - 1;
     var guess;
