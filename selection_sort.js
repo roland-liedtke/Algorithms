@@ -1,18 +1,30 @@
-var array = [18, 6, 66, 44, 9, 22, 14];
+function swap(arr, firstIndex, secondIndex) {
+    var temp = arr[firstIndex];
+	arr[firstIndex] = arr[secondIndex];
+	arr[secondIndex] = temp;
+};
 
-function indexOfMinimum(arr, startIndex) {
-    var minValue = arr[startIndex];
+var indexOfMinimum = function(array, startIndex) {
+    var minValue = array[startIndex];
     var minIndex = startIndex;
 
-    for(var i = minIndex + 1; i < arr.length; i++) {
-        if( arr[i] < minValue ) {
+    for(var i = minIndex + 1; i < array.length; i++) {
+        if(array[i] < minValue) {
             minIndex = i;
-            minValue = arr[i];
+            minValue = array[i];
         }
     } 
-    
     return minIndex;
 }; 
 
-var index = indexOfMinimum(array, 2);
-console.log("The index of the minimum value of the subarray starting at index 2 is " + index + "."  ); // Should be 4 !
+function selectionSort(array) {
+    var min;
+    for(var j = 0; j < array.length; j++) {
+        min = indexOfMinimum(array, j);
+        swap(array, min, j);
+    }
+};
+
+var array = [22, 11, 99, 88, 9, 7, 42];
+selectionSort(array);
+console.log("Array after sorting:  " + array);    // Should be [7, 9, 11, 22, 42, 88, 99]
