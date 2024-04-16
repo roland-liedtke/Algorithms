@@ -11,5 +11,5 @@ Oto lista funkcji w notacji asymptotycznej, z którymi mamy często do czynienia
 9. Θ(n!)
 
 - Big Theta(f(n)) - ograniczenie tempa wzrostu czasu wykonania algorytmu od góry i od dołu
-- Big O(f(n)) - ograniczenie od góry - W najgorszym wypadku
-- Big Omega(f(n)) - ograniczenie od dołu - w najlepszym wypadku
+- Big O(f(n)) - dla odpowiednio dużych n czas wykonania wynosi co najmniej dla pewnej stałej k2
+- Big Omega(f(n)) - dla odpowiednio dużych n czas wykonania wynosi co najmniej dla pewnej stałej k1
