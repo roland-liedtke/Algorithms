@@ -13,3 +13,6 @@ Oto lista funkcji w notacji asymptotycznej, z którymi mamy często do czynienia
 - Big Theta(f(n)) - ograniczenie tempa wzrostu czasu wykonania algorytmu od góry i od dołu
 - Big O(f(n)) - dla odpowiednio dużych n czas wykonania wynosi co najmniej dla pewnej stałej k2
 - Big Omega(f(n)) - dla odpowiednio dużych n czas wykonania wynosi co najmniej dla pewnej stałej k1
+
+- złożoność obliczeniowa przeszukiwania binarnego w najgorszym przypadku wynosi Omega(lg 2 n)
+
