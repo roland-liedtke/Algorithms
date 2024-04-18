@@ -1,3 +1,5 @@
+var array = [22, 11, 99, 88, 9, 7, 42];
+
 function swap(arr, firstIndex, secondIndex) {
     var temp = arr[firstIndex];
 	arr[firstIndex] = arr[secondIndex];
@@ -25,6 +27,5 @@ function selectionSort(array) {
     }
 };
 
-var array = [22, 11, 99, 88, 9, 7, 42];
 selectionSort(array);
 console.log("Array after sorting:  " + array);    // Should be [7, 9, 11, 22, 42, 88, 99]
