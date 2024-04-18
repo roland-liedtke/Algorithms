@@ -5,6 +5,7 @@ function binarySearch(arr, targetValue) {
     var max = arr.length - 1;
     var guess;
     var shoot = 1;
+    
     while(max >= min){
         guess = Math.floor((max + min) / 2);
         if(arr[guess] === targetValue){
