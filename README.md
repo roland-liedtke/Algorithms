@@ -1,3 +1,5 @@
+@TODO: max-heapify, min-heapify, change to python
+
 Oto lista funkcji w notacji asymptotycznej, z którymi mamy często do czynienia podczas analizowania algorytmów, w kolejności od najwolniej do najszybciej rosnących.
 
 1. Θ(1)
